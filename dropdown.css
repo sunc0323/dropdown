@@ -1,0 +1,89 @@
+.qt-dropdown-list {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ebeef5;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+}
+.qt-dropdown-list .list-content{
+  padding: 25px 30px;
+  max-height: 800px;
+  max-height: 80vh;
+  overflow: auto;
+}
+.qt-dropdown-list.show{display: block;}
+.qt-dropdown-list.hide{display: none;}
+.qt-dropdown-arrow,.qt-dropdown-arrow:after{
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.qt-dropdown-arrow{
+  top: -6px;
+  left: calc(50% - 6px);
+  margin-right: 3px;
+  border-bottom-color: #ebeef5;
+  border-width: 6px;
+  border-top-width: 0;
+  filter: drop-shadow(0 2px 12px rgba(0,0,0,.03));
+}
+.qt-dropdown-arrow:after {
+  content: " ";
+  border-width: 6px;
+  top: 1px;
+  margin-left: -6px;
+  border-top-width: 0;
+  border-bottom-color: #fff;
+}
+.qt-dropdown-group{
+  overflow: hidden;
+}
+.qt-dropdown-title{
+  line-height: 36px;
+  font-size: 14px;
+  margin: 0;
+  color: #999;
+}
+.qt-dropdown-item{
+  float: left;
+  width: 180px;
+  list-style: none;
+  line-height: 36px;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+}
+.qt-dropdown-item.is-disabled {
+  cursor: default;
+  color: #bbb;
+  pointer-events: none;
+}
+.qt-dropdown-item .item-icon{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #ddd;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.qt-dropdown-item .item-label{
+  display: inline-block;
+  width: calc(100% - 65px);
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
