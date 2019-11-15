@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>下拉菜单</title>
+  <link rel="stylesheet" href="../dist/septcuts.css">
+  <style>
+    body {
+      height: 100vh;
+      box-sizing: border-box;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .drop-demo {
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="drop-demo">下拉菜单</div>
+  <script src="../dist/septcuts.js"></script>
+  <script>
+    var septcuts=new Septcuts(".drop-demo")
+  </script>
+</body>
+
+</html>

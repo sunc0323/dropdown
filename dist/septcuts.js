@@ -13,7 +13,7 @@
       }
       document.getElementsByTagName('head')[0].appendChild(style);
     }
-    var styleString='.qt-dropdown-btn{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.qt-dropdown-list{position:absolute;top:0;left:0;z-index:10;margin:5px 0;background-color:#fff;border:1px solid #ebeef5;border-radius:4px;-webkit-box-shadow:0 2px 12px 0 rgba(0,0,0,.1);box-shadow:0 2px 12px 0 rgba(0,0,0,.1);-webkit-transform-origin:center top;transform-origin:center top;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}.qt-dropdown-list.show{opacity:1;-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transition:opacity .3s cubic-bezier(.23,1,.32,1),-webkit-transform .3s cubic-bezier(.23,1,.32,1);transition:opacity .3s cubic-bezier(.23,1,.32,1),-webkit-transform .3s cubic-bezier(.23,1,.32,1);transition:transform .3s cubic-bezier(.23,1,.32,1),opacity .3s cubic-bezier(.23,1,.32,1);transition:transform .3s cubic-bezier(.23,1,.32,1),opacity .3s cubic-bezier(.23,1,.32,1),-webkit-transform .3s cubic-bezier(.23,1,.32,1);-webkit-transform-origin:center top;transform-origin:center top}.qt-dropdown-list.hide{opacity:0;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transition:opacity .3s cubic-bezier(.23,1,.32,1),-webkit-transform .3s cubic-bezier(.23,1,.32,1);transition:opacity .3s cubic-bezier(.23,1,.32,1),-webkit-transform .3s cubic-bezier(.23,1,.32,1);transition:transform .3s cubic-bezier(.23,1,.32,1),opacity .3s cubic-bezier(.23,1,.32,1);transition:transform .3s cubic-bezier(.23,1,.32,1),opacity .3s cubic-bezier(.23,1,.32,1),-webkit-transform .3s cubic-bezier(.23,1,.32,1);-webkit-transform-origin:center top;transform-origin:center top}.qt-dropdown-list .list-content{padding:25px 30px;max-height:800px;max-height:80vh;overflow:auto}.qt-dropdown-arrow,.qt-dropdown-arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}.qt-dropdown-arrow{top:-6px;left:49%;left:calc(50% - 6px);margin-right:3px;border-bottom-color:#ebeef5;border-width:6px;border-top-width:0;-webkit-filter:drop-shadow(0 2px 12px rgba(0,0,0,.03));filter:drop-shadow(0 2px 12px rgba(0,0,0,.03))}.qt-dropdown-arrow:after{content:" ";border-width:6px;top:1px;margin-left:-6px;border-top-width:0;border-bottom-color:#fff}.qt-dropdown-group{overflow:hidden}.qt-dropdown-title{line-height:36px;font-size:14px;margin:0;color:#999}.qt-dropdown-item{float:left;width:180px;list-style:none;margin:10px 0;line-height:36px;font-size:16px;color:#333;cursor:pointer;outline:0}.qt-dropdown-item.is-disabled{cursor:default;color:#bbb;pointer-events:none}.qt-item-icon{display:inline-block;background-color:#f2f2f2;margin-right:10px;vertical-align:middle;text-align:center}.qt-item-icon img{width:100%;height:100%;vertical-align:top}.qt-dropdown-item .item-label{display:inline-block;width:calc(100% - 65px);vertical-align:middle;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}';
+    var styleString='.qt-dropdown-btn{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.qt-dropdown-list{position:absolute;top:0;left:0;z-index:10;margin:5px 0;background-color:#fff;border:1px solid #ebeef5;border-radius:4px;-webkit-box-shadow:0 2px 12px 0 rgba(0,0,0,.1);box-shadow:0 2px 12px 0 rgba(0,0,0,.1);-webkit-transform-origin:center top;transform-origin:center top;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}.qt-dropdown-list.show{opacity:1;-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transition:opacity .3s cubic-bezier(.23,1,.32,1),-webkit-transform .3s cubic-bezier(.23,1,.32,1);transition:opacity .3s cubic-bezier(.23,1,.32,1),-webkit-transform .3s cubic-bezier(.23,1,.32,1);transition:transform .3s cubic-bezier(.23,1,.32,1),opacity .3s cubic-bezier(.23,1,.32,1);transition:transform .3s cubic-bezier(.23,1,.32,1),opacity .3s cubic-bezier(.23,1,.32,1),-webkit-transform .3s cubic-bezier(.23,1,.32,1);-webkit-transform-origin:center top;transform-origin:center top}.qt-dropdown-list.hide{opacity:0;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transition:opacity .3s cubic-bezier(.23,1,.32,1),-webkit-transform .3s cubic-bezier(.23,1,.32,1);transition:opacity .3s cubic-bezier(.23,1,.32,1),-webkit-transform .3s cubic-bezier(.23,1,.32,1);transition:transform .3s cubic-bezier(.23,1,.32,1),opacity .3s cubic-bezier(.23,1,.32,1);transition:transform .3s cubic-bezier(.23,1,.32,1),opacity .3s cubic-bezier(.23,1,.32,1),-webkit-transform .3s cubic-bezier(.23,1,.32,1);-webkit-transform-origin:center top;transform-origin:center top}.qt-dropdown-list .list-content{padding:25px 30px;max-height:800px;max-height:80vh;overflow:auto}.qt-dropdown-arrow,.qt-dropdown-arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}.qt-dropdown-arrow{top:-6px;left:49%;left:calc(50% - 6px);margin-right:3px;border-bottom-color:#ebeef5;border-width:6px;border-top-width:0;-webkit-filter:drop-shadow(0 2px 12px rgba(0, 0, 0, .03));filter:drop-shadow(0 2px 12px rgba(0, 0, 0, .03))}.qt-dropdown-arrow:after{content:" ";border-width:6px;top:1px;margin-left:-6px;border-top-width:0;border-bottom-color:#fff}.qt-dropdown-group{overflow:hidden}.qt-dropdown-title{line-height:36px;font-size:14px;margin:0;color:#999}.qt-dropdown-item{float:left;width:180px;list-style:none;margin:5px 0;padding:6px 0;line-height:36px;font-size:16px;color:#333;cursor:pointer;outline:0;vertical-align:middle;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding:6px 0;margin:5px 0}.qt-dropdown-item:hover{background:#f7fbfe}.qt-dropdown-item.is-disabled{cursor:default;color:#bbb;pointer-events:none}.qt-item-icon{display:inline-block;background-color:#f2f2f2;margin:0 10px;vertical-align:middle;text-align:center}.qt-item-icon img{height:100%;max-width:100%;vertical-align:top}';
     loadCssCode(styleString);
     //兼容bind函数
     if(!Function.prototype.bind){
@@ -167,19 +167,38 @@
         for(var i=0;i<dropdownListAll.length;i++){
           dropdownListAll[i].classList.remove('show');
           dropdownListAll[i].classList.add('hide');
+          (function(j) {
+            setTimeout(function(){
+              dropdownListAll[j].style.display="none";
+            },300)
+          })(i);
         }
       }
     })
     Septcuts.prototype = {
         constructor: this,
         init: function(selector,opt) {
-          console.log(selector,opt);
             // 默认参数
             var def = {
+              groups:[{
+                title: '应用平台',
+                items: [
+                  { label: "考试阅卷", url: "http://www.7net.cc", icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAjVBMVEUAAAD/fS3/fSz/fS3/fy3/fC3/eSv/fiz/fi7/fSz/fSz/fS3/fCv/fS3/fSz/fS3/fS3/fCz/fS3/fSz/fSz/fi3/fy3/fwD/fS3/fC3/fSz/AAD/fS3/fS3/fC3/fS3/fSz/fSz/fCz/fC3/fC7/fzD/fS3/fS3/fSz/fS3/fS3/fiz/fi3/fC7/fS3zqYhZAAAALnRSTlMAzLJmIqoGMYB1EfAL9uviyW3dlkIlHAK8oYYB5tfTs62QfHA7GfnziU7BYCpUD8NcbwAAAYZJREFUWMPtl9lugzAQRdkJmDXshC0hZO/9/88ruEjtA0qNeWiJcl9sobnHoxkPkoXXUqwwKp6061swq1QmAKrry4zynWwCIEoCs2pxIUB6A9YDeBiBlGaXq8UFsNot4Hq30oat6rMBie/Ak+nQaMc9Qa3MA0QevGO/Hi+Bb/bZGMQ2djMAH8T2+/gkAwicgdSlqE1mgIFS/1oDq59yZ3AmxqmKGQEGUnrYrrgNaeuQ6eeQuAoTwIRjjhuDrue9QHXAngFAA8WOlv9EDR02Y2LbmLEGLdyQhpGoxzTQh3QaVB1zF64EudY30zkHBxHZUAAXkjnvHmzvmqA0J7gHTXg0sNvdvJsoOyguoZVYSSSngKTMnwW/BHAuAK5ZoIraYRrzq7XeH8qaAbk6JZ0doIoT8sI11eDvAe8u/FtAoH7LrTgAKMRRFeDzADbjRpMgC/yA0c8PoH5+wOjnB1A/P2D08wOofwGA+hcAcup/Aqh/Adi4Pw1QifxU+HE+37NPXPrw1IQX1SdRoi500xQR/QAAAABJRU5ErkJggg=="},
+                  {label:"阅卷任务",url:"http://www.7net.cc",icon:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAh1BMVEUAAAD/fy3/fzD/fyr/fi3/dzP/fS3/fS3/fSv/cDz/fS3/fS3/fC3/fi3/fS3/fS3/fS3/fC7/fC3/fSz/fSz/fC3/fCz/fi7/fS3/fSz/fi3/fS3/dyv/fS3/fSz/fS3/fi3/fC3/fS3/fC3/fCz/fC3/fCz/ey3/fS3/fS3/fiz/fC7/fS34xtryAAAALHRSTlMAIiAqVQnj9BIE+ukWyLyIZkLUwpdvSCX27locC+eikzDRtKp+dFI72atdJ5Rb2e4AAAEySURBVFjD7ZfbToQwEIYHsJzKmeXgArur69n//Z/PNlGJMTUyjTGQ/S4KN/2SdjozLW0E4bAQn/N9sPA/DC6YuLOgdRbTfhF4tBjvItiwIDmFNoIuA+LnhC0YJDTVyBXsEOzdJsY9V+DjTo0HZETHGEbqyCSQKNSYIyVKYSYQJkGGm5AciZ2KxsOVkc64hBK4TgP0HTuMRQ/laC0O0tDkRbjyXAj3j5GV4ABUno3gRQIy4QoiHYAyQK5+HTOjUVDH+ntETXT7Y0szCSY0Oif5gjP80y+WIIxL8HogsNlEKn1YhjEq1UFady7YpnMR2xSUuaS9MgRzUXWnBUWVWdZH68byZ61tmKCphF17P4eWF4y135Eugn8QsJ484rtgGU+zgPfsq0gzSl8wH57R+yxB2+ANHGN9HnuLJYkAAAAASUVORK5CYII="},
+                  {label:"分析中心",url:"http://www.7net.cc",icon:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAh1BMVEUAAAD/fCz/fi3/fi3/fS3/fS3/fS3/fS3/fC3/PBv/fCz/fSz/fTD/fS3/fi3/eSv/fiz/fSz/fyz/fS3/fS3/fS3/fS3/fS3/fS3/fCz/ey//fSz/fSz/fS3/fS3/ey3/fy7/fS3/fS3/fCz/fS3/fSz/fCn/fS7/fSz/fS7/fC//fS3/fS16dV5ZAAAALHRSTlMAbU9VZvvnv9MBd5YT9yEISkAw8e3i18SSRA+5oo1wOAXSsamDKBh9aFsmyG1V2ukAAAF2SURBVFjD7ZbrjoIwEIUVBS1QkDsoCN4ve97/+ZaiINk0pqXZTcxyfk0nPV/GkRmYjHrq5Kv5z4HuKAE0YDoC/gJApmatbDhAQ6NiMKDU0eg+uAdOtmWM1fAmahRKAFMHIhkAsUn/eAFgbSUAToxYex2PzE+ugCcIOBnAK02Kxj+x87QSAzB/3BHcvPFLPIllCKSE/W1mbbN3rV8UMKNAWhtWFMgrd4MGJA4wAf2R8AJgcQBwkRkm1vD5M74nqBXcJKbxzAo+dkdWv1FKjPM6YfX3fnCVaWuJfeDEQKANXyhZAIS+wkY6NH4FgImI55fpQfX+qj89i05jSlPOVQMHUcASEeeqjoU4wPifAOK4HABxiCigwBcHUMAUBSxAOYAIO3GAzgEYWI6ATwJsELbJBEkb7rFvwxjW+6W67zay7XXb3GVhm3U/90PzVwElYCkB3BDUVyJsAWpd51K62T0ASSCvXb8EO9chqZ/vnbU3k9PKnox66BvMa04Cg/Tj/QAAAABJRU5ErkJggg=="},
+                  {label:"精准分层教学",url:"http://www.7net.cc",icon:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAhFBMVEUAAAD/fS3/Z0H/fS3/fC3/fSr/dzP/fS3/fS3/fS3/fCz/fi3/fC3/fS3/fS3/fiz/fS3/fS3/fS3/fiz/fSz/fS3/fS3/fS3/fC3/fC3/fi3/fC7/fC3/fS3/fC3/fC3/ey7/fSz/fC3/fSz/fiv/fS3/fS3/fiT/fS3/fSz/fC3/fS0Gi2KSAAAAK3RSTlMA+gNMbg4J9Oe7Q4g74GYv7l+AI+uzks2reFUbnpg3KBPZ0B4XxlAH1YWmU01BdwAAAd9JREFUWMPtlNuSgjAMhhcQReS8gJwERAQx7/9+a4ozi621hZ3Z8cLc0Sbl/5t8/frE28e3E8SBXy+s1lcNkFC2mbrg5zsPfsMIZsowIyzzYrPt8+6qoIzCla5e+xcsP67W94U2tXFh70s5yYMQs7fadLHPtpJOrAT1bg4Vs+MexE56vyHaU53dI04M3D5nqkg7N/rszHXijtrjSuTxOnrMqXVHIfeuy9zygEo963FsFNSuSve5ATAeslOAbNak7QDM6XcMoM8bVQB/+r0CGPo5oEUA5XSh9rA5rWR5ddgA7KnuGDhm11JcrWpkqpsTLSq1qTHjPBJHUu6r3KONXS56JCKTl+CiOVCS8gVoXnx6LZGDvu5Qj4TgkhAYWjsLmsBJ4VLav+UHpQ1G9FPN6gZy7xeHo12APgmifUGURUiq7R1qXxSqq/laJZerlbNOZtI77L3sNdWpDQply8JGhUMu3WSvZhElPFoC7d19zFr+FDMNl09RzWjk8fScxZiIpFiknYxJicU5PGQP58tkWWw42gUvC/uOiMMtFHSyXd1gSs887WInJHjviNhJlmxIdViYS2FalzeYXFUOJutvMGUAzb/BVBCY2ucwJW8N08gJyMFkcg734g9M7wzTJ5bHD7veV65YYS+VAAAAAElFTkSuQmCC"},
+                  {label:"学情监测",url:"http://www.7net.cc",icon:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAjVBMVEUAAAD/fS3/fS3/fS3/fS3/fS3/fSz/fS3/fy3/fC3/fS3/fS3/cyb/dyf/fSz/fS7/ey7/eSv/fS3/fS3/fSz/fS3/fSz/fS3/fS3/fS3/fS3/fC3/fSz/fC3/eyv/fSz/fi3/fC3/fC3/fC3/fSv/fir/fC3/fS7/fS3/fi3/fi7/fS3/fS3/fS7/fS16cqilAAAALnRSTlMA3bvYtS1iZiKq+/YGAkUbFQvpXPCimntW5ZF2TkASy8adbjo0L87EsIgmq5aL+szkcAAAAWVJREFUWMPt1MlugzAUhWEbaEmNzTwPmee25/0fr6VJVZCikOtkkSr5V3jzCa7wZTcqqAyTX956tmS99hzUMtZJmkBoEJoIIO8AEZBIRmnhwOwcE4iA0SoB/+9ktRytV+DlMQE/+tQH1LIyBEpNwM/TAm2NHrBycChUmm/gHoUP+hD7gqsN1DG+i6UmIEuYtgPMNP+D/RpJ0H5FrQdETpz/zCGUOkCQYDI6PHqEX1llx5215Cgl/S6MNhBN68xF6GpcJtuJbV6MmWdgO6bfRn+LzYgthFWHzlzRr7NbiF371RVgruj7QO4EXxzmaCUBfaGsTKTBr0XfSGruhLX+SmuHbnnsGqCo1HVLVd79Wn8Cg0DzdrJUXgpE/GST8f+ZwRO4B8Czh3PPARmG4+cANRouuO8hPjjAqYDdA1IInwikQGfT5YBBEyKBaeeopoDghGJANF3Qn4KYE7FeKp9ZxuW9Zx67VV8C11USZpkqvgAAAABJRU5ErkJggg=="}
+                ]
+              },{
+                title: '教考工具',
+                items: [
+                  {label:"小题分导入",url:"http://www.7net.cc",icon:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAllBMVEUAAAD/eyn/fi3/fi7/fS3/fS3/fS3/ZTr/fC3/fCz/fS3/fS3/fi3/fS3/fSz/fS3/fS3/eDP/fS3/fSz/fSz/fi3/fS3/fC3/aTT/fi3/fC3/fSz/fS3/fSz/fS3/fC3/fi3/fS3/fS3/fS3/fS7/fi3/fS3/fyr/fS3/fS3/fiz/fC3/fSz/fSz/bST/fS3/fS3/fS01HGAaAAAAMXRSTlMAD4iAcmbdAqo7/foU8erm4gnYHZuN9s8ExqNsXyPu08u1r5R6WEgwwX1QKaY1B0Hzq4n6IwAAAkJJREFUWMPtlmdv4kAQQMc0N9wbBhx6CeWS9///3IHl5LCjAOv7ypNcZO0+zVozOysvKsx9yvNYg+6fxnwLRYy6YM9n0lEgB7MmSElEhQgmtQ/QVRJo0HsJXoJnBdrlKg56W4G+tD9EfHptBZNy1AwvaCcYvuEMRfowaSeIYX15BC6+1kawgUEZ+zuMWwiODtaHXPkTwkZZEPmwqt7PFvZBURANIP/eN7uQbpUEpgeD4b+EiMGKg+cFfRsGUS2lgFnxrMAELHdwi7ECFs8KPmARU0ebpoyfXsJhox/HhuFhGSU+jKTYBKq1kONKyRK7VTH5ZFKywGkjOMLpq/F5bQTd7zLMCaWOntnmI8HQwa5yISOTBiNNHgj0JcTVu8defvBAoBngV8m8A6OKamrMXH++2o4eCEZTH952Yl6OAuuOV/2M4N2hIjzcFUQhEB5FZl/jtevXDPCMVbxIgXh0r5jAToLrZuS+XZglw+t8D+ZbvQxl4sJS/10wXMSFNAgySPTvETl01DrTOyS3vjnWUUWgOWS1mAubpYpgA1upscLWFAQn3EaLNGGjIJizaCazxVpB4BNLA4+VgmDwszs5JAqCPXmzWqGnIEiwhlJjWjsuW48EJqzr5Z7j3pRDyLzQfkW/bkE4USOAbi1R7xFeuuQWZtpNRGn91DAacwf7uvwOhLuv+KcpzaPTuf8753LSGKzTVhOJpnMAxxQ19LUN8Fne/b6rbpBinFLirTXZtTFIcOglncm5rKuLwZP/Yhee5EXJX1+HegfFoWrkAAAAAElFTkSuQmCC"},
+                  {label:"答题卡制作",url:"http://www.7net.cc",icon:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAZlBMVEUAAAD/fy3/fzD/eC3/eSr/fi3/fi3/fi3/fS3/fS3/fS3/fS3/fC3/fS3/fjD/fi3/fS3/fS3/fCz/fC7/fS3/fS3/fC3/fC3/fC3/fC3/fC3/fiz/fCv/fC3/fS3/fi3/eyz/fS38VCbFAAAAIXRSTlMAIiARBogrkvbz7tpqRhrGjVI7e/Czo5x2cU4tC33IVTpTx8+hAAABEUlEQVRYw+2X2w6CMAyGp9TNwwQUzyi6939JV0ZRDFlodiEh+6/2JfRbFy62ikkF0tnApNBTrSvDSKZ/HHJjmNnITv3BsHP4MgDun0sQAwNSYQ+f77XFm2DlZkt0S5XdXzBje8jajqxNcgWlLaIzpG7NC+6aNuu5XQt2bNE8CvoEkNQBH/kEz6Wps94jbVeOVluk/drRcucRHE0ThXQiOiEpoqNHsKMOXvwOOucUvaduaOS/MQpGIEiKRZ0rIN0vji53JLg6KhKP4GyaPJByohzpQXQeIigYAv4RRv0XomAUgnixxIvlb4Lwh2b4U1dkxqiAx3boc58GDlUOHzhKGjjCR57woYsCOmOOfYGD55TyBkYgbQeiu0bYAAAAAElFTkSuQmCC"}
+                ]
+              }],
               itemWidth:180,
               colNum:3,
-              showTime:0,
-              iconSize:45,
+              iconSize:28,
               trigger:"hover"
             };
             this.opt = extend(def,opt,true); //配置参数
@@ -196,7 +215,9 @@
               break;
             }
           }
-          this.colNum=maxLenght;
+          if(maxLenght<this.opt.colNum){
+            this.opt.colNum=maxLenght;
+          }
           for(var i=0;i<elementList.length;i++){
             var currentElm=elementList[i];
             this._renderItemDom(currentElm,opt);
@@ -233,20 +254,20 @@
               }
               // console.log(list[j]);
               if(list[j].disabled){
-                html+='<div class="qt-dropdown-item is-disabled"'+dataStr+'>'+'\n';
+                html+='<div class="qt-dropdown-item is-disabled"'+dataStr+' style="width:'+this.opt.itemWidth+'px;">'+'\n';
               }else{
-                html+='<div class="qt-dropdown-item"'+dataStr+'>'+'\n';
+                html+='<div class="qt-dropdown-item"'+dataStr+' style="width:'+this.opt.itemWidth+'px;">'+'\n';
               }
               var iconStyle='height:'+this.opt.iconSize+'px;width:'+this.opt.iconSize+'px;'
               if(list[j].icon){
-                iconStyle+='background:#fff;';
+                iconStyle+='background:transparent;';
                 html+='<i class="qt-item-icon" style="'+iconStyle+'">'+'\n'+
                 '<img src="'+list[j].icon+'">'+'\n'+
                 '</i>'+'\n';
               }else{
                 html+='<i class="qt-item-icon" style="'+iconStyle+'"></i>'+'\n';
               }
-              html+='<span class="item-label" style="width:'+(this.opt.itemWidth-this.opt.iconSize-25)+'px">'+list[j].label+'</span>'+'\n';
+              html+='<span class="item-label">'+list[j].label+'</span>'+'\n';
               html+='</div>'+'\n';
             }
             html+='</div>'+'\n';
@@ -298,7 +319,7 @@
               var e=e||window.event;
               stopPropagation(e);
               var relatedEle = e.relatedTarget ? e.relatedTarget : e.type == 'mouseout' ? e.toElement : e.fromElement
-              if (!contains(this, relatedEle)) {
+              if (!relatedEle||!contains(this, relatedEle)) {
                 if(showTimeout){
                   clearTimeout(showTimeout);
                   showTimeout=null;
@@ -323,8 +344,8 @@
             addEventListener(dropdownList,'mouseout', function(e){
               var e=e||window.event;
               stopPropagation(e);
-              var relatedEle = e.relatedTarget ? e.relatedTarget : e.type == 'mouseout' ? e.toElement : e.fromElement
-              if (!contains(this, relatedEle)) {
+              var relatedEle = e.relatedTarget ? e.relatedTarget : e.type == 'mouseout' ? e.toElement : e.fromElement;
+              if (!relatedEle||!contains(this, relatedEle)) {
                 _this.hide(dropdownList);
           　　}
             },true);
@@ -410,13 +431,16 @@
         click:function(element,dropdownList){
           var attributes = element.attributes;
           var dataobj={};
-          console.log(attributes)
           for(var i=0;i<attributes.length;i++){
             if(attributes[i].name.indexOf("data-")>-1){
               dataobj[attributes[i].name.replace("data-","")] = attributes[i].value;
             }
           }
-          this.opt.click && this.opt.click(dataobj);
+          if(this.opt.click){
+            this.opt.click(dataobj);
+          }else{
+            dataobj.url && window.open(dataobj.url)
+          }
           this.hide(dropdownList);
         },
         css: function(element,styleObj){

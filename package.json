@@ -1,0 +1,24 @@
+{
+  "name": "septcuts",
+  "version": "1.0.1",
+  "description": "七天网络快捷下拉框",
+  "main": "dist/septcuts.js",
+  "module": "dist/septcuts.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.septnet.cn/npm/septcuts.git"
+  },
+  "keywords": [
+    "septnet",
+    "download",
+    "shortcuts"
+  ],
+  "author": "sunchao",
+  "license": "ISC"
+}
