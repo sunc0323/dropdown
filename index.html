@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>下拉菜单</title>
-  <link rel="stylesheet" href="dropdown.css">
+  <link rel="stylesheet" href="septcuts.css">
   <style>
     body{
       height: 100vh;
@@ -22,34 +22,32 @@
       cursor: pointer;
       margin:0 auto;
     }
-    .drop-item .icon-ksyj{
-      background: url(./demo.png) center center no-repeat;
-      background-size: 100% 100%;
-    }
   </style>
 </head>
 <body>
   <div class="drop-demo">下拉菜单</div>
-  <script src="./dropdown.js"></script>
+  <script src="./septcuts.js"></script>
   <script>
-    var dropdown=new DropDown(".drop-demo",{
+    var septcuts=new Septcuts(".drop-demo",{
       groups: [{
         title: '应用平台',
         items: [
-          {label:"考试阅卷",url:"http://www.7net.cc",icon:"icon-ksyj"},
-          {label:"阅卷任务",url:"http://www.7net.cc",icon:"icon-yjrw"},
-          {label:"分析中心",url:"http://www.7net.cc",icon:"icon-fxzx"},
-          {label:"精准分层教学",url:"http://www.7net.cc",icon:"icon-jzfcjx"},
-          {label:"学情监测",url:"http://www.7net.cc",icon:"icon-xqjc"}
+          {label:"考试阅卷",url:"http://www.7net.cc",icon:"./demo.png"},
+          {label:"阅卷任务",url:"http://www.7net.cc",icon:""},
+          {label:"分析中心",url:"http://www.7net.cc",icon:"./demo.png"},
+          {label:"精准分层教学",url:"http://www.7net.cc",icon:""},
+          {label:"学情监测",url:"http://www.7net.cc",icon:""}
         ]
       },{
         title: '教考工具',
         items: [
-          {label:"小题分导入",url:"http://www.7net.cc",icon:"icon-xtfdr"},
-          {label:"答题卡制作",url:"http://www.7net.cc",icon:"icon-dtkzz"},
+          {label:"小题分导入",url:"http://www.7net.cc",icon:""},
+          {label:"答题卡制作",url:"http://www.7net.cc",icon:""}
         ]
       }],
+      trigger:'e',
       cssClass:'drop-item',
+      iconSize:45,
       click:function(item){
         console.log(item);
         if(item.url){
