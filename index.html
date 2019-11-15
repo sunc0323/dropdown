@@ -22,7 +22,7 @@
       cursor: pointer;
       margin:0 auto;
     }
-    .drop-item .ksyj{
+    .drop-item .icon-ksyj{
       background: url(./demo.png) center center no-repeat;
       background-size: 100% 100%;
     }
@@ -36,23 +36,25 @@
       groups: [{
         title: '应用平台',
         items: [
-          {label:"考试阅卷",url:"http://www.baidu.com",icon:"ksyj"},
-          {label:"阅卷任务",url:"http://www.baidu.com",icon:"",disabled:true},
-          {label:"分析中心",url:"http://www.baidu.com",icon:""},
-          {label:"考试阅卷",url:"http://www.baidu.com",icon:""},
-          {label:"分析中心",url:"http://www.baidu.com",icon:""}
+          {label:"考试阅卷",url:"http://www.7net.cc",icon:"icon-ksyj"},
+          {label:"阅卷任务",url:"http://www.7net.cc",icon:"icon-yjrw"},
+          {label:"分析中心",url:"http://www.7net.cc",icon:"icon-fxzx"},
+          {label:"精准分层教学",url:"http://www.7net.cc",icon:"icon-jzfcjx"},
+          {label:"学情监测",url:"http://www.7net.cc",icon:"icon-xqjc"}
         ]
       },{
-        title: '标题2',
+        title: '教考工具',
         items: [
-          {label:"菜单444",url:"http://www.baidu.com",icon:""},
-          {label:"菜单55555",url:"http://www.baidu.com",icon:"",disabled:true},
-          {label:"菜单66",url:"http://www.baidu.com",icon:""}
+          {label:"小题分导入",url:"http://www.7net.cc",icon:"icon-xtfdr"},
+          {label:"答题卡制作",url:"http://www.7net.cc",icon:"icon-dtkzz"},
         ]
       }],
       cssClass:'drop-item',
       click:function(item){
         console.log(item);
+        if(item.url){
+          window.open(item.url)
+        }
       }
     })
   </script>

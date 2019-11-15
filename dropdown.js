@@ -39,6 +39,14 @@
       var r=document.body.offsetWidth-width-l;
       return {top:t,left:l,right:r}
     }
+    function contains(parent, node) {
+    　　if(parent.compareDocumentPosition){ //ff
+    　　　　var _flag = parent.compareDocumentPosition(node); 
+    　　　　return (_flag == 20 || _flag == 0)? true : false; 
+    　　}else if(parent.contains){ //ie
+    　　　　return parent.contains(node);
+    　　}
+    }
     // 插件构造函数 - 返回数组结构
     function DropDown(selector,opt){
       window.onload=function(){
@@ -68,7 +76,9 @@
             // 默认参数
             var def = {
               itemWidth:180,
-              colNum:3
+              colNum:3,
+              showTime:0,
+              trigger:"hover"
             };
             this.opt = extend(def,opt,true); //配置参数
             this._renderDom(selector,this.opt);
@@ -124,9 +134,9 @@
                 html+='<div class="qt-dropdown-item"'+dataStr+'>'+'\n';
               }
               if(list[j].icon){
-                html+='<i class="item-icon '+list[j].icon+'"></i>'+'\n';
+                html+='<i class="qt-item-icon '+list[j].icon+'"></i>'+'\n';
               }else{
-                html+='<i class="item-icon"></i>'+'\n';
+                html+='<i class="qt-item-icon"></i>'+'\n';
               }
               html+='<span class="item-label">'+list[j].label+'</span>'+'\n';
               html+='</div>'+'\n';
@@ -142,13 +152,75 @@
           dropdownList.appendChild(dropdownContent);
           dropdownList.appendChild(dropdownArrow);
           this.setPosition(dropdownList,currentElm,dropdownArrow);
+          dropdownList.style.display="none";
           document.body.appendChild(dropdownList);
+          //绑定事件
+          this.bindEvent(currentElm,dropdownList);
+        },
+        bindEvent(currentElm,dropdownList){
           var _this=this;
+          var showTimeout=null,hideTimeout=null,isClick=false;
           currentElm.addEventListener('click', function(e){
             var e=e||window.event;
             e.stopPropagation();
-            _this.toggle(dropdownList);
+            if(!isClick){
+              isClick=true;
+              setTimeout(function(){
+                isClick=false;
+              },300)
+              _this.toggle(dropdownList);
+            }
           },true);
+          if(this.opt.trigger=="hover"){
+            currentElm.addEventListener('mouseover', function(e){
+              var e=e||window.event;
+              e.stopPropagation();
+              showTimeout=setTimeout(function(){
+                isClick=true;
+                setTimeout(function(){
+                  isClick=false;
+                },300)
+                _this.show(dropdownList,function(){
+                  clearTimeout(showTimeout);
+                  showTimeout=null;
+                });
+              },200)
+            },true);
+            currentElm.addEventListener('mouseout', function(e){
+              var e=e||window.event;
+              e.stopPropagation();
+              var relatedEle = e.relatedTarget ? e.relatedTarget : e.type == 'mouseout' ? e.toElement : e.fromElement
+              if (!contains(this, relatedEle)) {
+                if(showTimeout){
+                  clearTimeout(showTimeout);
+                  showTimeout=null;
+                }else{
+                  hideTimeout=setTimeout(function(){
+                    _this.hide(dropdownList,function(){
+                      clearTimeout(hideTimeout);
+                      hideTimeout=null;
+                    });
+                  },200)
+                }
+          　　}
+            },true);
+            dropdownList.addEventListener('mouseover', function(e){
+              var e=e||window.event;
+              e.stopPropagation();
+              if(hideTimeout){
+                clearTimeout(hideTimeout);
+                hideTimeout=null;
+              }
+            },true);
+            dropdownList.addEventListener('mouseout', function(e){
+              var e=e||window.event;
+              e.stopPropagation();
+              var relatedEle = e.relatedTarget ? e.relatedTarget : e.type == 'mouseout' ? e.toElement : e.fromElement
+              if (!contains(this, relatedEle)) {
+                _this.hide(dropdownList);
+          　　}
+            },true);
+          }
           dropdownList.addEventListener('click', function(e){
             var e=e||window.event;
             e.stopPropagation();
@@ -159,7 +231,6 @@
             }
           },true);
         },
-        
          // 弹框的位置
         setPosition(dropdownList,currentElm,dropdownArrow){
           if(!currentElm){
@@ -205,20 +276,26 @@
         },
         show: function(dropdownList,callback){
           this.setPosition(dropdownList);
-          dropdownList.classList.remove('hide');
-          dropdownList.classList.add('show');
+          dropdownList.style.display="block";
+          setTimeout(function(){
+            dropdownList.classList.remove('hide');
+            dropdownList.classList.add('show');
+          },10);
           callback && callback();
         },
         hide: function(dropdownList,callback){
-          dropdownList.classList.remove('show');
           dropdownList.classList.add('hide');
+          dropdownList.classList.remove('show');
+          setTimeout(function(){
+            dropdownList.style.display="none";
+          },300)
           callback && callback();
         },
         hideAll(){
           var dropdownListAll = document.querySelectorAll(".qt-dropdown-list");
           for(var i=0;i<dropdownListAll.length;i++){
-            dropdownListAll[i].classList.remove('show');
             dropdownListAll[i].classList.add('hide');
+            dropdownListAll[i].classList.remove('show');
           }
         },
         click:function(element,dropdownList){
@@ -232,12 +309,12 @@
           this.opt.click && this.opt.click(dataobj);
           this.hide(dropdownList);
         },
-        css: function(styleObj){
+        css: function(element,styleObj){
             for(var prop in styleObj){
                 var attr = prop.replace(/[A-Z]/g,function(word){
                     return '-' + word.toLowerCase();
                 });
-                this.dom.style[attr] = styleObj[prop];
+                element.style[attr] = styleObj[prop];
             }
             return this;
         }
