@@ -1,6 +1,5 @@
 {
   "name": "septcuts",
-  "version": "1.0.1",
   "description": "七天网络快捷下拉框",
   "main": "dist/septcuts.js",
   "module": "dist/septcuts.min.js",
@@ -10,15 +9,25 @@
   "engines": {
     "node": ">= 4.7.0"
   },
+  "bugs": {
+    "url": "https://git.septnet.cn/npm/septcuts/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://git.septnet.cn/npm/septcuts.git"
   },
+  "homepage": "https://git.septnet.cn/npm/septcuts.git#readme",
   "keywords": [
     "septnet",
     "download",
-    "shortcuts"
+    "shortcuts",
+    "七天网络",
+    "七天教育"
   ],
-  "author": "sunchao",
-  "license": "ISC"
+  "author": "septnet",
+  "contributors": [
+    {"name": "sunchao"}
+  ],
+  "license": "ISC",
+  "version": "1.0.5-rc1"
 }

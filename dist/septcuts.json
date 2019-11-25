@@ -1,0 +1,17 @@
+[{
+  "title": "应用平台",
+  "items": [
+    { "label": "考试阅卷","memo":"精选优质资源，好题随便刷平台介绍平台介绍平", "url": "https://office.7net.cc", "icon":"https://static.7net.cc/septcuts/icons/ksgl.png" },
+    { "label": "阅卷任务", "memo":"精选优质资源，好题随便刷平台介绍平台介绍平", "url": "https://yj.7net.cc", "icon":"https://static.7net.cc/septcuts/icons/yjrw.png" },
+    { "label": "分析中心", "memo":"精选优质资源，好题随便刷平台介绍平台介绍平", "url": "https://rpt.7net.cc", "icon":"https://static.7net.cc/septcuts/icons/fxzx.png" },
+    { "label": "题库组卷", "memo":"精选优质资源，好题随便刷平台介绍平台介绍平", "url": "https://tiku.7net.cc", "icon":"https://static.7net.cc/septcuts/icons/tkzj.png" },
+    { "label": "精准分层教学", "memo":"精选优质资源，好题随便刷平台介绍平台介绍平", "url": "https://ta.7net.cc", "icon":"https://static.7net.cc/septcuts/icons/jzhfcjx.png" },
+    { "label": "学情监测", "memo":"精选优质资源，好题随便刷平台介绍平台介绍平", "url": "https://studentplatformmanager.7net.cc", "icon":"https://static.7net.cc/septcuts/icons/xqjc.png" }
+  ]
+}, {
+  "title": "教考工具",
+  "items": [
+    { "label": "小题分导入", "memo":"精选优质资源，好题随便刷平台介绍平台介绍平", "url": "https://scoreimport.7net.cc", "icon":"https://static.7net.cc/septcuts/icons/xtfdr.png" },
+    { "label": "答题卡制作", "memo":"精选优质资源，好题随便刷平台介绍平台介绍平", "url": "https://ac.7net.cc", "icon":"https://static.7net.cc/septcuts/icons/dtkzz.png" }
+  ]
+}]
